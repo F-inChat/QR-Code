@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap');
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(212, 45%, 89%);
+    --grayishblue : hsl(220, 15%, 55%);
+    --darkblue: hsl(218, 44%, 22%);
+}
+
+/*defining var to make easier to change colors later*/
+img {
+    width: 100%;
+    /*width of 100% so it cover the 100% fo the container*/
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+
+body {
+    background: var(--light-grey);
+    font-size: 15px;
+    margin: 2em;
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+     
+    
+    /*margin to push the container to the middle and left some space withing the content and the edge*/
+}
+.container {
+    padding: 1em;
+    background-color: var(--white);
+    border-radius: 1em;
+    margin-bottom: 1em;
+    color: var(--grayishblue);
+    text-align: center;
+    min-height: 100px;
+    
+    
+}
+.container h1 {
+    color: var(--darkblue);
+}
+.attribution { font-size: 11px; text-align: center; 
+color: var(--grayishblue);}
+.attribution a { 
+    
+    text-decoration: none;
+    color: hsl(228, 45%, 44%); }
+
+@media (min-width: 375px) {
+    .container {
+        width: 275px;
+    }
+}
+
+
+
